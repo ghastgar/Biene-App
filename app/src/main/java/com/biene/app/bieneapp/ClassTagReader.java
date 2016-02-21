@@ -2,7 +2,6 @@ package com.biene.app.bieneapp;
 
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
-import android.nfc.tech.IsoDep;
 import android.util.Log;
 
 public class ClassTagReader implements NfcAdapter.ReaderCallback {
@@ -26,7 +25,7 @@ public class ClassTagReader implements NfcAdapter.ReaderCallback {
         // using the IsoDep class.
         Log.e("tag id: ", tag.getId() + " ");
         //((TextView) findViewById(R.id.text)).setText("Read tag: " + tag.getId() + " ");
-        IsoDep isoDep = IsoDep.get(tag);
+        //IsoDep isoDep = IsoDep.get(tag);
 
     }
 }

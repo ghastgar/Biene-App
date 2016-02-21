@@ -8,11 +8,41 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.biene.app.bieneapp.MainActivity"
-    android:gravity="center">
+    android:layout_gravity="center">
 
-    <TextView
-        android:id="@+id/text"
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:textSize="50sp"
+        android:fontFamily="sans-serifd"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check in to a class!" />
+        android:text="Accept"
+        android:id="@+id/button"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check in to a class!"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif"/>
+
+    </RelativeLayout>
+
+
 </RelativeLayout>
